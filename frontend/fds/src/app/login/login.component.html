@@ -1,0 +1,21 @@
+<main>
+    <article>
+   
+    <div class="wrapper">
+      <form class="form-signin" #addLogin="ngForm" (ngSubmit)="login(addLogin.value)">       
+        <h2 class="form-signin-heading">Please login</h2>
+        <input type="text" class="form-control" ngModel user_phone
+        #user_phone="ngModel" name="user_phone" placeholder="Phone number" required="" autofocus="" />
+        <input type="password" class="form-control" ngModel password
+        #password="ngModel"
+         name="user_password" placeholder="Password" required=""/>      
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button> 
+        <p>Want to Create Account ? <a routerLink="/register">Click Here</a></p>  
+      </form>
+    </div>
+    </article>
+   </main>
+   

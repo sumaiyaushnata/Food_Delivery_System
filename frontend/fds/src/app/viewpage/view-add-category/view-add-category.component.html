@@ -1,0 +1,44 @@
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 class="section-title position-relative text-center mb-5">Add Catagory</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="contact-form bg-light rounded p-5">
+                    <div id="success"></div>
+                    <form  #addCategory="ngForm" (ngSubmit)="submit(addCategory.value)">
+                        
+                      
+                        <div class="control-group">
+      
+      <input type="text" class="form-control p-4" id="subject" ngModel name="cat_name" placeholder="Enter Catagory Name" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="subject" ngModel name="food_orgin" placeholder="Enter Food Orgin" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-4" id="subject" ngModel name="cat_code" placeholder="Enter Catagory Code" required="required" data-validation-required-message="Please enter a code" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control p-4" rows="6"  ngModel name="food_description" placeholder="Enter food description" required="required" data-validation-required-message="Please enter food description"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                           <span><button class="btn btn-primary justify-content-center" type="submit" id="sendMessageButton">Add</button></span> 
+                           <span><button class="btn btn-primary justify-content-end" type="submit" id="sendMessageButton">Close</button></span> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

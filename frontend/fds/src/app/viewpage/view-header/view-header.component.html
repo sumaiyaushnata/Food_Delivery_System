@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info navfixed">
+    <a class="navbar-brand" href="#">Admin Deshboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="./">Home </a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="./add-category/">Add Catagory</a></li>
+              <li><a class="dropdown-item" routerLink="./view-category/">All Catagory List</a></li>
+              
+            </ul>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Restaurant
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="./add-resturant/">Add Restaurant</a></li>
+              <li><a class="dropdown-item" routerLink="./view-resturant/">All Restaurant List</a></li>
+              
+            </ul>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Food
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="./add-food/">Add Food</a></li>
+              <li><a class="dropdown-item" routerLink="./view-food/">All Food List</a></li>
+              
+            </ul>
+          </li>
+        
+        
+            <li class="nav-item">
+                <a class="nav-link" routerLink="./view-customer/"> Customer List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="./view-order/">Order List</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login"> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="./">LogOut</a>
+              </li>
+         
+      </ul>
+    </div>
+  </nav>

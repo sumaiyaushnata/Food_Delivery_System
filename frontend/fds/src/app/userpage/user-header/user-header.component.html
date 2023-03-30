@@ -1,0 +1,94 @@
+
+    <header class="section-header">  
+      <section class="header-main">
+        <div class="container">
+          <div class="row gy-3 align-items-center">
+            <div class="col-lg-2 col-sm-4 col-4">
+              <a href=" " class="navbar-brand">
+                HungryNaki
+              </a> <!-- brand end.// -->
+            </div>
+            
+            <div class="order-lg-last col-lg-5 col-sm-8 col-8">
+              <div class="float-end" >
+                
+                 <a routerLink="/login" class="btn btn-light" *ngIf="!test" >  
+
+                    <i class="fa fa-user"></i>  <span class="ms-1 d-none d-sm-inline-block">Account</span> 
+                </a>
+                <a routerLink="/view" class="btn btn-light" *ngIf="!test"> 
+                  <i class="fa fa-user"></i>  <span class="ms-1 d-none d-sm-inline-block">Admin</span>   
+                </a>
+                <a data-bs-toggle="offcanvas" routerLink="/cart-page"  class="btn btn-light"> 
+                  <i class="fa fa-shopping-cart"></i> <span class="ms-1">My Cart({{cartItems}}) </span> 
+                </a>
+                  </div>
+            </div> <!-- col end.// -->
+            <div class="col-lg-5 col-md-12 col-12">
+              <form action="#" class="">
+                      <div class="input-group">
+                        <input type="search" class="form-control" style="width:55%" placeholder="Search">
+                        <select class="form-select">
+                          <option value="">All type</option>
+                          <option value="codex">Special</option>
+                          <option value="comments">Only best</option>
+                          <option value="content">Latest</option>
+                        </select>
+                        <button class="btn btn-primary">
+                          <i class="fa fa-search"></i> 
+                        </button>
+                      </div> <!-- input-group end.// -->
+                    </form>
+            </div> <!-- col end.// -->
+            
+          </div> <!-- row end.// -->
+        </div> <!-- container end.// -->
+      </section> <!-- header-main end.// -->
+      <nav class="navbar navbar-light bg-info border-top navbar-expand-lg">
+        <div class="container">
+          <button class="navbar-toggler border" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_main">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-center" id="navbar_main">
+            <ul class="navbar-nav  navbar-center">
+              
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/" >Home</a>
+
+                <li class="nav-item" *ngIf="test">
+                  <a class="nav-link" routerLink="/my-order">My Orders</a>
+                </li>
+                <li class="nav-item" *ngIf="test">
+                  <a class="nav-link" routerLink="" >{{userName}}</a>
+                </li>
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Catagory
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">National Food</a>
+                    <a class="dropdown-item" href="#">Continantal Food</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Fast Food</a>
+                  </div>
+                </li>
+              <li class="nav-item" *ngIf="!test">
+                  <a class="nav-link ps-0" href="#"> About </a>
+                </li>
+                <li class="nav-item" *ngIf="!test">
+                  <a class="nav-link" routerLink="/user-contact">Contact Us</a>
+                </li>
+                <li class="nav-item" *ngIf="test">
+                  <a class="nav-link" (click)="userLogout()">Log Out</a>
+                </li>
+                
+                
+               
+            </ul>
+          </div> <!-- collapse end.// -->
+        </div> <!-- container end.// -->
+      </nav> <!-- navbar end.// -->
+    </header> <!-- section-header end.// -->
+

@@ -1,0 +1,64 @@
+<app-user-header></app-user-header>
+        
+            <!-- <div class="container">
+              <div class="row">
+                <div class="col-sm-8">
+         
+            <form class="form-signin" #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">       
+              <h3 class="form-signin-heading">Add shipping address</h3>
+              <input type="text" class="form-control" ngModel name="email" placeholder="Enter email address" required="" autofocus="" />
+              <input type="text" class="form-control" ngModel name="address" placeholder="Enter User Address" required=""/>      
+              <input type="text" class="form-control" ngModel name="phone_number" placeholder="Enter contact details" required=""/>   
+              <button class="form-button">Order Now</button>  
+            </form> 
+              <div class="col-sm-4"> 
+              <h5>Total Amount:{{totalPrice}} </h5>
+              <h5>Payment Method : <b>Pay on delivery</b></h5> 
+               <a class="btn btn-outline-dark" href="/my-order" role="button" >Order Now</a> 
+              
+              </div>
+            
+           
+          </div>
+          
+                  
+              </div>
+              </div>
+            
+            -->
+
+
+
+
+              <div class="checkout">
+                <h1>Checkout</h1>
+                <div class="container">
+                <div class="row">
+                  <div class="col-sm-7">
+                    <h3>Add shipping address</h3>
+                    <form class="form-signin" #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">       
+                     
+                      <input type="text" class="form-control" ngModel name="email" placeholder="Enter email address" required="" autofocus="" />
+                      <br/>
+                      <input type="text" class="form-control" ngModel name="address" placeholder="Enter User Address" required=""/> <br/>     
+                      <input type="text" class="form-control" ngModel name="phone_number" placeholder="Enter contact details" required=""/> <br/>  
+                      <button class="form-button">Order Now</button>  
+                    </form> 
+                  </div>
+                  <div class="col-sm-5">
+                      <h3>Total Amount: {{totalPrice}}</h3>
+                      <h4>Payment Method : <b>Pay on delivery</b></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+
+          
+         
+         <app-user-footer></app-user-footer> 
+          
+
+
+
+  

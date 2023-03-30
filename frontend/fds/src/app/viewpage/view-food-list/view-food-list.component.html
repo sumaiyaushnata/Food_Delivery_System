@@ -1,0 +1,69 @@
+
+<div class="container-fluid ">
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 class="section-title position-relative text-center mb-5">Food List</h1>
+            </div>
+        </div>
+        <section>
+          <div class="cart-box-main">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="table-main table-responsive">
+                              <table class="table">
+                                  <thead>
+                                  <tr>
+                                    <th>Food Id</th>
+                                    <th>Food Title</th>
+                                    <th>Food Description</th>
+                                    
+                                    <th>Food Picture</th>
+                                    <th>Food Price</th>
+                                    <th>Food Discount</th>
+                                    <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actions</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr *ngFor="let item of foodList">
+                                      <td >
+                                         {{item.id}}
+                                      </td>
+                                      <td >
+                                        {{item.food_name}}
+                                      </td>
+                                      <td >
+                                        {{item.food_description}}
+                                      </td>
+                                      <td class="quantity-box"> {{item.image}}</td>
+                                      <td class="total-pr">
+                                        {{item.price}}
+                                      </td>
+                                      <td>
+                                        {{item.discount}}
+                                      </td>
+                                      
+                                      <td>
+                                        <div class="d-grid gap-1 d-md-flex ">
+                                          <button class="btn btn-primary me-md-2" type="button">edit</button>
+                                          <button class="btn btn-primary" type="button">delete</button>
+                                        </div>
+                                      </td>
+                                     
+                                  </tr>
+                                  
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </div>
+</div>
+
+
+
+

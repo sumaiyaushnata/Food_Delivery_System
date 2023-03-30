@@ -1,0 +1,21 @@
+<main>
+    <article>
+   
+    <div class="wrapper">
+      <form class="form-signin"[formGroup]="form" (ngSubmit)="submit()">       
+        <h2 class="form-signin-heading">Please Sign up</h2>
+        <input type="text" class="form-control"  placeholder="First Name" required="" autofocus="" formControlName="user_firstName"/>
+        <input type="text" class="form-control"  placeholder="Last Name" required="" autofocus="" formControlName="user_lastName"/>
+        <input type="text" class="form-control"  placeholder="Phone Number" required="" autofocus="" formControlName="user_phone" />
+        <input type="text" class="form-control"  placeholder="Address" required="" autofocus="" formControlName="user_address"/>
+        <input type="text" class="form-control"  placeholder="Email address" required="" autofocus="" formControlName="user_email" />
+        <input type="password" class="form-control"  placeholder="Password" required="" formControlName="user_password"/>      
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button> 
+        <p>Already Have Account ?<a routerLink="/login">Click Here</a></p>  
+      </form>
+    </div>
+    </article>
+   </main>

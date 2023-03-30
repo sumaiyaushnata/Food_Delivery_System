@@ -1,0 +1,90 @@
+
+<div >
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h1 class=>Add Food</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="contact-form bg-light rounded p-5">
+                    <div id="success"></div>
+                    <form #addFood="ngForm" (ngSubmit)="submit(addFood.value)">
+                        
+                      
+                        <div class="control-group">
+                            <input type="text" class="form-control p-1"  ngModel name="food_name" placeholder="Enter Food Title" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control p-1" rows="2"  ngModel name="food_description" placeholder="Enter food description" required="required" data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                       
+                        
+                        
+                        <div class="control-group">
+                            <input type="text" class="form-control p-1"  ngModel name="food_code" placeholder="Enter Food Code" required="required" data-validation-required-message="Please enter a code" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-1" ngModel name="price" placeholder="Enter Food Price" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-1"  ngModel name="restaurant" placeholder="Enter Restaurant" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-1" ngModel name="discount" placeholder="Enter Food Discount" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control p-1" id="subject" ngModel name="image" placeholder="Enter Food image" required="required" data-validation-required-message="Please enter a name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <!-- <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="custom-file-label" for="customFile">Choose Image</label>
+                          </div> -->
+                          <div class="form-row">
+                            
+                            
+                         
+                          <div class="col-sm-6 control-group" >
+                            <label for="inputState">Catagory</label>
+                            <select id="inputState" class="form-control" ngModel name="category">
+                                <option selected>Choose...</option>
+                              <option *ngFor="let item of catList"  [value]="item.cat_name" > 
+                                {{item.cat_name}}
+                              </option>
+                              
+                            </select>
+                        </div>
+                        <div class="col-sm-6 control-group" >
+                            <label for="inputState">Food Orgin</label>
+                            <select id="inputState" class="form-control" ngModel name="orgin">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                              <option>...</option>
+                              <option>...</option>
+                              <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center">
+                        <button >Add</button>
+                        <button class="btn btn-primary" type="button">Close</button>
+                      </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
